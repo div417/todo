@@ -1,0 +1,24 @@
+<!DOCTYPE  html>
+<html>
+<head>
+<title>
+Todo app
+</title>
+</head>
+<body>
+<form action="/add" method="POST">
+     <h3>Add task</h3>
+    <input type="text" name="task"><br><br>
+    <input type="checkbox" name="urgent" value="Urgent">Urgent<br>
+    <input type="checkbox" name="important" value="important">Important<br><br>
+    <input type="submit" value="ADD">
+</form>
+<ul>
+<% tasks.each do |todo|%>
+<li>
+<%= todo.task%>
+</li>
+<% end %>
+</ul>
+</body>
+</html>
