@@ -1,1 +1,1 @@
-Its a todo app made with ruby sinatra framework
+Its a Todo App made with ruby sinatra framework
