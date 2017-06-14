@@ -1,0 +1,1 @@
+Its a todo app made with ruby sinatra framework
