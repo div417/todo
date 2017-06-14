@@ -32,3 +32,12 @@ post '/add' do
        end
        return redirect '/'
 end
+post '/done' do
+       task=params["task"]
+       Tasks.each do |todo|
+           if todo.task==task
+               todo.done=!todo.done
+           end
+       end
+       return redirect '/'
+end
