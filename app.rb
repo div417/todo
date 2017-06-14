@@ -16,8 +16,7 @@ get '/' do
 end
 post '/add' do
        task=params["task"]
-       puts task
-       if task != nil
+       if task.length != 0
        if params.has_key?("urgent")==true
            urgent=true
        else
